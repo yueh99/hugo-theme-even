@@ -3,6 +3,7 @@
 // ==============================
 
 .header {
+  
   @include clearfix;
   padding: $header-padding;
 
@@ -12,6 +13,8 @@
   .language-selector {
     float: right;
   }
+  background-color: #0b183b; //lan3
+  
 }
 
 @include max-screen() {

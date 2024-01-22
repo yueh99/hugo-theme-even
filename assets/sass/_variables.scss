@@ -8,12 +8,13 @@
 $theme-color-config: 'Default';
 
 // Default theme color map
+//'Default': #c05b4d #f8f5ec,
 $theme-color-map: (
-  'Default': #c05b4d #f8f5ec,
+  'Default': #0b183b #e9f0ff,
   'Mint Green': #16982B #f5f5f5,
   'Cobalt Blue': #0047AB #f0f2f5,
   'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
+  'Dark Violet': #9932CC #f5f4fa,
 );
 
 // Check theme color config.
@@ -27,41 +28,58 @@ $theme-color-list: map-get($theme-color-map, $theme-color-config);
 $theme-color: nth($theme-color-list, 1) !default;
 
 // Deputy theme color of the site.
-$deputy-color: nth($theme-color-list, 2) !default;
+$deputy-color: nth($theme-color-list, 2) !default; 
+
+
+
 
 
 // ========== Color ========== //
 $black: #0a0a0a !default;
-$white: #fefefe !default;
+// $white: #fefefe !default;
+$white: #e9f0ff !default;
 $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
 
+$lan1: #e9f0ff !default; //中间
+$lan2: #142c52 !default; //侧栏
+$lan3: #0b183b !default; //标题背景
+$lan4: #0e0e43 !default; //字
+$lan5: #0a0e28 !default; //标题字
+
+$yellow: #f5d76e !default;
+
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #34495e !default;
+// $global-font-color: #34495e !default;
+$global-font-color: $lan4 !default; //字体颜色
 
 // Font size attribute applied to '<html>' and '<body>'.
-$global-font-size: 16px !default;
+$global-font-size: 16px !default; //字体大小
 
 // Global width of '<body>'.
-$global-body-width: 800px !default;
+$global-body-width: 828px !default; //主体宽度 800
 
 // Padding of container main
-$global-container-padding: 0 20px !default;
+$global-container-padding: 0 40px !default; //主体内边距 20
 
 // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
-$global-lineheight: 1.5 !default;
+$global-lineheight: 1.5 !default; //行高
 
 // Font family of the site.
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+//$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default; //无衬线字体
+//$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default; //无衬线字体
+$global-font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+
 
 // Serif font family of the site.
-$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
+//$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default; //衬线字体
+$global-serif-font-family: STZhongsong, serif !default; //衬线字体
 
 // Background color of the site.
-$global-background: $white !default;
+$global-background: $lan2 !default; //侧栏背景
 
 // Headings font size of the site.
 $global-headings: (
@@ -76,7 +94,7 @@ $global-headings: (
 
 // ========== Header ========== //
 // Padding of the site header.
-$header-padding: 20px 20px !default;
+$header-padding: 45px 20px !default; //头部内边距 20 20
 
 // Font family: Chancery
 @font-face {
@@ -93,19 +111,19 @@ $header-padding: 20px 20px !default;
 }
 
 // Font size of the logo.
-$logo-font-size: 48px !default;
+$logo-font-size: 48px !default; //logo字体大小
 
 // Font family of the logo.
-$logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+$logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default; //logo字体
 
 // Margin of menu item.
-$menu-item-margin-left: 10px !default;
+$menu-item-margin-left: 10px !default; //菜单项左边距
 
 // Margin of menu item in mobile.
 $menu-item-mobile-margin: 5px !default;
 
 // Font size of menu item link.
-$menu-link-font-size: 18px !default;
+$menu-link-font-size: 18px !default; //菜单项字体大小
 
 // Height of the mobile header.
 $mobile-navbar-height: 50px !default;
@@ -118,7 +136,7 @@ $post-list-margin-bottom: 20px !default;
 $post-padding: 1.5em 0 !default;
 
 // Border top of the post + post.
-$post-border: 1px solid $light-gray !default;
+$post-border: 1px solid $gray !default; //首页post分隔线颜色
 
 // Font size of post title.
 $post-title-font-size: 27px !default;
@@ -129,28 +147,28 @@ $post-title-font-weight: 400 !default;
 // Margin top of the post meta (post time).
 $post-meta-margin-top: 5px !default;
 
-// Font color of the post meta.
-$post-meta-font-color: $dark-gray !default;
+// Font color of the post meta. 
+$post-meta-font-color: $dark-gray !default; //文章时间颜色
 
 // Border bottom of the read more link when hover it.
-$post-readMore-border-bottom: 1px solid $theme-color !default;
+$post-readMore-border-bottom: 1px solid $theme-color !default; //阅读更多链接的线 
 
 // Margin top of the post footer.
-$post-footer-margin-top: 20px !default;
+$post-footer-margin-top: 20px !default; //文章底部上边距
 
 // Border top of post footer.
-$post-footer-border-top: 1px solid $light-gray !default;
+$post-footer-border-top: 1px solid #ff0000 !default; // 单篇文章底部线条颜色
 
 // Padding of the post tags.
-$post-tags-padding: 15px 0 !default;
+$post-tags-padding: 15px 0 !default; //标签内边距
 
 // Font size of post pagination.
-$post-nav-font-size: 18px !default;
+$post-nav-font-size: 18px !default; //文章分页字体大小
 
 
 // ========== TOC ========== //
 // Width of the post toc.
-$post-toc-width: 200px !default;
+$post-toc-width: 200px !default; //文章目录宽度
 
 // Backgroud color of the post toc.
 $post-toc-backgroud: rgba($deputy-color, 0.6) !default;
@@ -159,13 +177,13 @@ $post-toc-backgroud: rgba($deputy-color, 0.6) !default;
 $post-toc-margin-left: $global-body-width - 15px !default;
 
 // Font size of the post toc title.
-$post-toc-title-size: 20px !default;
+$post-toc-title-size: 20px !default; //文章目录标题字体大小
 
 // Font size of the post toc content.
-$post-toc-content: 15px !default;
+$post-toc-content: 15px !default; //文章目录内容字体大小
 
 // List style of the post toc list.
-$post-toc-list-style: square !default;
+$post-toc-list-style: square !default; //文章目录列表样式
 
 // Max screen media of the post toc.
 $toc-max-sreen-width: 2 * $post-toc-width + $post-toc-margin-left !default;
@@ -174,17 +192,17 @@ $toc-max-sreen-width: 2 * $post-toc-width + $post-toc-margin-left !default;
 // Headings anchor.
 $content-headings-anchor: "" !default;
 
-// Border bottom of the link when hover it.
+// Border bottom of the link when hover it. //标题链接线颜色
 $content-link-border: 1px solid $theme-color !default;
 
-// Background color of the blockquote.
+// Background color of the blockquote. //引用背景颜色
 $content-blockquote-backgroud: rgba($theme-color, 0.05) !default;
 
-// Border left of the blockquote.
+// Border left of the blockquote. //引用左边框
 $content-blockquote-border-left: 3px solid rgba($theme-color, 0.3) !default;
 
-// Border color of the table.
-$content-table-border-color: darken($deputy-color, 3%) !default;
+// Border color of the table. //表格边框颜色
+$content-table-border-color: darken($deputy-color, 3%) !default; 
 
 // ========== Code ========== //
 // Color of the code.
@@ -280,7 +298,7 @@ $social-link-margin-left: 10px !default;
 $social-icon-font-size: 30px !default;
 
 // Margin of the copyright.
-$copyright-margin: 10px 0 !default;
+$copyright-margin: 5px 0 !default;
 
 
 // ========== Archive ========== //

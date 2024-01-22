@@ -15,7 +15,7 @@
     bottom: 0;
     left: 51%;
     right: 51%;
-    background: $theme-color;
+    background: #ff0000; //menu和文章标题下划线颜色
     transition-duration: 0.2s;
     transition-property: right, left;
     transition-timing-function: ease-out;

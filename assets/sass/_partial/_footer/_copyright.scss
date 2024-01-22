@@ -4,19 +4,20 @@
 
 .copyright {
   margin: $copyright-margin;
-  color: $dark-gray;
+  color: $lan5;
   text-align: center;
   font-family: $global-serif-font-family;
 
-  .hexo-link,
-  .theme-link {
-    color: $theme-color;
-  }
+  // .hexo-link,
+  // .theme-link {
+  //   color: $theme-color;
+  // }
 
   .copyright-year {
     display: block;
 
     .heart {
+      color: #d41e1e;
       font-size: 14px;
       margin: 4px;
     }

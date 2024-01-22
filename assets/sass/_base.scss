@@ -1,6 +1,7 @@
 @import '_common/normalize';
 
 html {
+  font-family: $global-font-family; 
   font-size: $global-font-size;
   box-sizing: border-box;
 }
@@ -8,7 +9,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: $global-font-family;
+  font-family: $global-serif-font-family; // $global-font-family
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

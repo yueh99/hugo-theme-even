@@ -13,13 +13,13 @@
 </div> -->
 
 <div class="copyright">
-  <span class="power-by">
+  <!-- <span class="power-by">
     {{ (printf (T "powered") `<a class="hexo-link" href="https://gohugo.io">Hugo</a>`) | safeHTML }}
   </span>
   <span class="division">|</span>
   <span class="theme-info">
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
+  </span> -->
 
   {{ if .Site.Params.busuanzi.enable -}}
   <div class="busuanzi-footer">
@@ -35,7 +35,8 @@
     {{- end }}
   </div>
   {{- end }}
-
+  <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=fzbgus53q4HTHYWJUissER9WDTqSkJRw3DO_YJCna8I&cl=ffffff&w=200"></script> -->
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=0b183b&w=200&t=tt&d=fzbgus53q4HTHYWJUissER9WDTqSkJRw3DO_YJCna8I&co=e9f0ff&cmo=3acc3a&cmn=ff5353&ct=0e0e43'></script>
   <span class="copyright-year">
     {{- $current := now.Format "2006" }}
     &copy; 

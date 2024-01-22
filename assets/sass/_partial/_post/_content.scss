@@ -4,11 +4,13 @@
 
 .post-content {
   word-wrap: break-word;
+  
+  font-family: $global-serif-font-family; //文章内容字体
 
   @for $i from 1 through 6 {
     h#{$i} {
       font-weight: 400;
-      font-family: $global-serif-font-family;
+      font-family: $global-serif-font-family; //文章内#标题字体
 
       .anchor {
         float: left;
@@ -42,7 +44,6 @@
   a {
     color: $theme-color;
     word-break: break-all;
-
     &:hover {
       border-bottom: $content-link-border;
     }
@@ -100,14 +101,14 @@
 
   .post-summary {
     margin-bottom: 1em;
+    font-family: $global-serif-font-family; //文章摘要字体
   }
 
   .read-more {
     .read-more-link {
-      color: $theme-color;
-      font-size: 1.1em;
-      font-family: $global-serif-font-family;
-    
+      color: $dark-gray;
+      font-size: 14px;
+      font-family: $global-serif-font-family; //阅读更多字体
       &:hover {
         border-bottom: $post-readMore-border-bottom;
       }

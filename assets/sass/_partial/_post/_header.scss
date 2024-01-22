@@ -4,8 +4,8 @@
   .post-title {
     margin: 0;
     font-size: $post-title-font-size;
-    font-weight: $post-title-font-weight;
-    font-family: $global-serif-font-family;
+    font-weight: 600; //文章标题字体粗细 $post-title-font-weight
+    font-family: STzhongsong, serif; //首页文章标题字体
   }
 
   .post-link {
@@ -13,11 +13,12 @@
   }
 
   .post-meta {
-    font-size: 14px;
+    font-size: 14px; //文章字体大小
+    font-family: $global-serif-font-family; //文章时间字体
     color: $post-meta-font-color;
 
     .post-time {
-      font-size: 15px;
+      font-size: 15px; //时间字体大小
     }
 
     .post-category {
@@ -27,7 +28,7 @@
         color: inherit;
 
         &::before {
-          content: '·';
+          content: '・';
         }
 
         &:hover {

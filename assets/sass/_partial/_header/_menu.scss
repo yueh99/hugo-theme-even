@@ -10,21 +10,23 @@
     position: relative;
     padding-left: 0;
     padding-right: 25px;
-    font-family: $global-serif-font-family;
+    font-family: $global-font-family; //目录字体
 
     .menu-item {
       display: inline-block;
 
       & + .menu-item {
-        margin-left: $menu-item-margin-left;;
+        margin-left: $menu-item-margin-left;
       }
 
-      @include underline-from-center;
+      @include underline-from-center; //menu下面的线的动画
     }
 
     .menu-item-link {
       font-size: $menu-link-font-size;
+      color: #e9f0ff; //目录字颜色 诶呦我的天呐 必须放这！
     }
+
   }
 }
 
